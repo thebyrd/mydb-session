@@ -1,0 +1,14 @@
+{
+  "name": "mydb-session",
+  "version": "0.0.1",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "*",
+    "monk": "~0.7.1",
+    "cookie-signature": "~1.0.1",
+    "uid2": "0.0.3",
+    "buffer-crc32": "~0.2.1",
+    "cookie": "~0.1.0",
+    "bytes": "~0.2.1"
+  }
+}

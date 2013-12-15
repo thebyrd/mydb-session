@@ -73,9 +73,9 @@ Session.prototype.$buffer = function(op, obj){
 Session.prototype.reload = function(fn){
   fn = fn || noop;
   var self = this;
-  var qry = { sid: this.$req.originalSession.id };
+  var qry = { sid: this.$req.sessionID };
   var set = {
-    sid: this.$req.originalSession.id,
+    sid: this.$req.sessionID,
     active_at: new Date,
     user_agent: this.$req.headers['user-agent'],
     state: 'online'

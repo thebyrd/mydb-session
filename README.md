@@ -5,7 +5,14 @@ mydb session store
 ```javascript
 var session = require('mydb-session')
 app.use(session({
-  
+  url: 'uid.mydb.io',
+  mongo: require('monk')(),
+  secret: 'supersecuresecret'
 }))
+```
+
+```javascript
+
 
 ```
+
